@@ -14,8 +14,15 @@ The functionality I am aiming for is a event tracker/alarm. A notification can b
     - Check emails
     - Laundry
     - Brush teeth
-- Keeps track of meetings and my timetable
-### TODO add meme for "me creating reminders and events before I forget all about them"
+- Keeps track of meetings and my timetable 
+- Keeps one off reminders for miscellaneous use (need some kind of web interface to add ad hoc events) 
+
+<div align='center'>
+
+![Furious typing][furioustyping]  
+*me creating reminders and events before I forget all about them*
+
+</div>
 
 When there is some event that needs your attention (Winter orientation starts in ten minutes), the device catches your attention by flashing or beeping (depending on h/w).  
 **Congratulations! It is now unlikely you will miss the event.**
@@ -24,11 +31,22 @@ When there is some event that needs your attention (Winter orientation starts in
 &nbsp;
 # How does it do this stuff?
 Defined events are stored in a DB, checked at regular intervals. As an event's due time approaches the item is displayed with more prominence to catch your attention.  
-The device itself will be querying this DB regularly to catch updates. The interface will likely be a rotary encoder and buttons to select items and either mark them done, skip or postpone them. 
+The device itself will be querying this DB regularly to catch updates. The interface will likely be a rotary encoder and buttons to select items and either mark them done, skip or postpone them.  
 
+<div align='center'>
 
-&nbsp;
-# Hardware considerations
+![how does it work][yeahscience]
+
+</div>
+
+# Hardware choices
 Beginning with a raspberry pi zero to run python code. The database is currently a mysql server running on a local NAS. 
 
     Subject to change based on h/w limitations 
+
+&nbsp;
+
+
+[memes]: <>
+[furioustyping]: https://media.giphy.com/media/Wer1aEweDWq2Y/giphy.gif "me creating reminders and events before I forget all about them"
+[yeahscience]: https://media.giphy.com/media/qCj1NK1rxtnna/giphy.gif "Yeah! Science!"
