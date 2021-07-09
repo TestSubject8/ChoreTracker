@@ -40,13 +40,27 @@ The device itself will be querying this DB regularly to catch updates. The inter
 </div>
 
 # Hardware choices
-Beginning with a raspberry pi zero to run python code. The database is currently a mysql server running on a local NAS. 
+Beginning with a raspberry pi zero to run python code. The database is currently a mysql server running on a local NAS.  
+Two rotary push button encoders have been added. They are using an Encoder library I found and modified (to deal with read voltages on the Pi0). 
 
     Subject to change based on h/w limitations 
 
 &nbsp;
 
+# Progress
+Prototype 0 is a Nokia 3310 LCD screen with two rotary encoders (with push buttons).  
+<div align='center'>
+
+![prototype0][prot0]  
+
+*This was leftover from a previous trial, but I had to replace the header pins*
+
+</div>
+The display is working, currently the script just runs a 'select db()' query and prints the only db name on the screen. 
+
+The rotary encoders change the contrast for now. Pushing the button runs the 'select db()' again. 
 
 [memes]: <>
+[prot0]: images/circ_board.jpg "Perf board prototype, dust city"
 [furioustyping]: https://media.giphy.com/media/Wer1aEweDWq2Y/giphy.gif "me creating reminders and events before I forget all about them"
 [yeahscience]: https://media.giphy.com/media/qCj1NK1rxtnna/giphy.gif "Yeah! Science!"
