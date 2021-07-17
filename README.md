@@ -2,7 +2,7 @@
 Every day I (am supposed to) repeat the same chores at around the same time. Every day I struggle to achieve the simplest tasks as a result of being an extremely distractable person.  
 This device is meant to provide a quick look at all my pending tasks for the day. This is meant to replace my alarms, calendar events and notepad scratchings.  
 
-There will be a dedicated display to only show the most relevant events that are to be addressed in the coming hours. By filtering the things I have to focus on, I can (hopefully) keep a clear head and get to what needs doing.  
+There will be a dedicated 'always on' display to only show the most relevant events (maybe with some nice wallpapers) that are to be addressed in the coming hours. By filtering the things I have to focus on, I can (hopefully) keep a clear head and get to what needs doing.  
 
 
 &nbsp;
@@ -48,17 +48,10 @@ Two rotary push button encoders have been added. They are using an Encoder libra
 &nbsp;
 
 # Progress
-Prototype 0 is a Nokia 3310 LCD screen with two rotary encoders (with push buttons).  
-<div align='center'>
+Prototype 0 is a Nokia 3310 LCD screen with two rotary encoders (with push buttons) (picture in images/).  Very simple functionality only. 
 
-![prototype0][prot0]  
-
-*This was leftover from a previous trial, but I had to replace the header pins*
-
-</div>
-The display is working, currently the script just runs a 'select db()' query and prints the only db name on the screen. 
-
-The rotary encoders change the contrast for now. Pushing the button runs the 'select db()' again. 
+Plans for Prototype 1: I'm rolling some wallpaper program into this, and making it an 'always on' picture frame - the notifications/events will be added as layers of text (likely using some utility like `convert`). I'm keeping the OS light by using the framebuffer directly.  
+Some setup for putting out HDMI ( and possibly audio ) has been completed on the Pi0 - nothing relavant to be added to this repo yet (Possible TODO: Create a system image or a setup script)  
 
 [memes]: <>
 [prot0]: images/circ_board.jpg "Perf board prototype, dust city"
