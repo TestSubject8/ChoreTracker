@@ -50,8 +50,9 @@ Two rotary push button encoders have been added. They are using an Encoder libra
 # Progress
 Prototype 0 is a Nokia 3310 LCD screen with two rotary encoders (with push buttons) (picture in images/).  Very simple functionality only. 
 
-Plans for Prototype 1: I'm rolling some wallpaper program into this, and making it an 'always on' picture frame - the notifications/events will be added as layers of text (likely using some utility like `convert`). I'm keeping the OS light by using the framebuffer directly.  
-Some setup for putting out HDMI ( and possibly audio ) has been completed on the Pi0 - nothing relavant to be added to this repo yet (Possible TODO: Create a system image or a setup script)  
+Plans for Prototype 1: I'm rolling some wallpaper program into this, and making it an 'always on' picture frame - the notifications/events will be added as layers of text
+Framebuffer programming done by someone else: https://github.com/grz0zrg/fbg
+This should work to add images and text from the local fs.
 
 [memes]: <>
 [prot0]: images/circ_board.jpg "Perf board prototype, dust city"
